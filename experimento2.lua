@@ -20,6 +20,7 @@ function apaga()
     gpio.write(pino_led, gpio.LOW)
 end 
 
+-- função chamada quando aperta um botão.
 function callback_botao(level, when)
     print("callback: " .. level .. " quando: " .. when)
     if (level == 1) then
